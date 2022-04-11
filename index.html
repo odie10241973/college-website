@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universty Website Design- Easy Tutorials</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  
+<section class="header">
+<nav>
+  <a href="index.html"><img src="images/logo.png"></a>
+  <div class="nav-links" id="navlinks">
+    <i class="fa fa-times-circle" onclick="hidemenu()" ></i>
+  <ul>
+    <li><a href="index.html"></a>Home</li>
+    <li><a href="about.html"></a>About</li>
+    <li><a href="course.html"></a>Course</li>
+    <li><a href="blog.html"></a>Blog</li>
+    <li><a href="contact.html"></a>Contact</li>
+  </ul>
+</div>
+<i class="fa fa-bars" onclick="showmenu()" ></i>
+</nav>
+
+<div class="text-box">
+  <h1>World's biggest Universty</h1>
+  <p>Making a website is now one of the easiest thing in the world. You just need to learn HTML, CSS, <br>Javascript and you are good to go.</p>
+  <a href=""class="hero-btn">Vist Us to know more</a>
+</div>
+</section>
+
+<!-- course -->
+<section class="course">
+  <h1>Courses We offer</h1>
+  <p>This is Omar Furlow's first full website. I hope you like it.</p>
+  
+  <div class="row">
+    <div class="course-col">
+      <h3>Intermediate</h3>
+      <p>This website was complicated.This website took two day to configure,however it was alot of fun</p>
+    </div>
+    
+    <div class="course-col">
+      <h3>Degree</h3>
+      <p>Coding is not easy.Nevertheless,the more projects you do, the more familar you will become.</p>
+    </div>
+    
+    <div class="course-col">
+      <h3>Post Graduation</h3>
+      <p>My next website will be my personal website. I will make the website to carbon copy my life.</p>
+    </div>
+  </div>
+
+</section>
+<!-- campus -->
+<section class="campus">
+  <h1>Our Global campus</h1>
+  <p>At this point Im getting excited about the look</p>
+
+  <div class="row">
+    <div class="campus-col">
+      <img src="images/london.png">
+  <div class="layer">
+    <h3>LONDON</h3>
+  </div>
+</div>
+
+<div class="campus-col">
+  <img src="images/newyork.png">
+<div class="layer">
+<h3>New York</h3>
+</div>
+</div>
+<div class="campus-col">
+  <img src="images/washington.png">
+<div class="layer">
+<h3>Los Angeles</h3>
+</div>
+</div>
+</div>
+  
+  </section>
+  <!-- Facilities -->
+  <section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>This website is amazing, it has alot of great details.</p>
+
+    <div class="row">
+      <div class="facilities-col">
+        <img src="images/library.png">
+        <h3>World Class library</h3>
+        <p>This website was very time consuming. I think if it wasnt my first full website it would have been faster.</p>
+      </div>
+      <div class="facilities-col">
+        <img src="images/basketball.png">
+        <h3>Largest Playground</h3>
+        <p>This website was very time consuming. I think if it wasnt my first full website it would have been faster.</p>
+      </div>
+      <div class="facilities-col">
+        <img src="images/cafeteria.png">
+        <h3>Tasty and Healthy food</h3>
+        <p>This website was very time consuming. I think if it wasnt my first full website it would have been faster.</p>
+      </div>
+    </div>
+</section>
+
+<!-- testimonials -->
+<section class="testimonials">
+  <h1>What Our Students Says</h1>
+  <p>When I create my next website I will use most if not all of these tags</p>
+  <div class="row">
+    <div class="testimonial-col">
+      <img src="images/user1.jpg">
+      <div>
+        <p>
+          Building this website I had alot of confusion, along with alot of quetion. However, I am getting through it.
+        </p>
+        <h3>Sabrina Banks</h3>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-o"></i>
+      </div>
+    </div>
+
+    <div class="testimonial-col">
+      <img src="images/user2.jpg">
+      <div>
+        <p>
+          Building this website I had alot of confusion, along with alot of quetion. However, I am getting through it.
+        </p>
+        <h3>Quae Furlow</h3>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+      </div>
+    </div>
+</div>
+</section>
+<!-- Call To Action -->
+<section class="cta">
+  <h1>Enroll For Our Various Online Courses<br> Anywhere from the world</h1>
+  <a href="" class="hero-btn">Contact Us</a>
+</section>
+<!-- Footer -->
+<section class="footer">
+  <h4>About Us</h4>
+  <p>This website is a great instructional website. It has so many details</p>
+<div class="icons">
+  <i class="fa fa-facebook"></i>
+  <i class="fa fa-twitter"></i>
+  <i class="fa fa-instagram"></i>
+  <i class="fa fa-linkedin"></i>
+</div>
+<p>Made with<i class="fa fa-heart-o"></i> by Omar Furlow </p>
+</section>
+
+
+
+<!-- JavaScript for Toggle Menu -->
+<script>
+  
+  var navlinks =document.getElementById("navLinks");
+  function showmenu(){
+    navLinks.style.right = "0";
+  }
+  function hidemenu(){
+    navLinks.style.right ="-200px"
+  }
+
+
+</script>
+
+</body>
+</html>
